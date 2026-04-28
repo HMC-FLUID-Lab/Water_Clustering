@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.python-version
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude / agent
+.claude/
+
+# Local archive (not for upload)
+_archive/
+
+# ─── Result figures ──────────────────────────────────────────────────────────
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Re-include the paper PDF and any committed schematic illustrations.
+!Paper_WaterMLClustering.pdf
+
+# ─── Simulation data (large binaries) ────────────────────────────────────────
+*.dcd
+*.chk
+*.mat
+*.npz
+
+# OpenMM serialized state
+data/simulations/**/system_*.xml
+data/simulations/**/cp_*.chk
+data/simulations/**/statedata_*.txt
+data/simulations/**/inistate_*.pdb
+
+# ─── Generated outputs ───────────────────────────────────────────────────────
+results/*
+!results/README.md
+batch_results*/
+structure_factor_results/
+
+# Logs
+*.log
+
+# Misc
+*.tmp

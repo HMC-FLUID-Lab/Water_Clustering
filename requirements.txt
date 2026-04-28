@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tqdm
+joblib
+mdtraj
+openmm
+# optional — only used when 3_clustering/water_clustering.py is run with --umap
+umap-learn
