@@ -2,7 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg
 *.egg-info/
+build/
+dist/
 .pytest_cache/
 .mypy_cache/
 .ipynb_checkpoints/
@@ -10,6 +13,18 @@ __pycache__/
 .venv/
 venv/
 env/
+.coverage
+htmlcov/
+
+# Compiled extensions
+*.so
+*.dylib
+*.dll
+*.pyd
+
+# Secrets / local env
+.env
+.env.*
 
 # OS
 .DS_Store
@@ -20,6 +35,11 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+*.code-workspace
+
+# HPC / job outputs
+nohup.out
+slurm-*.out
 
 # Claude / agent
 .claude/

@@ -5,9 +5,7 @@ End-to-end pipeline for identifying **Locally Favored Tetrahedral Structures
 simulations, following the Shi & Tanaka two-state framework
 (*JACS* **142**, 2868 — 2020).
 
-The paper write-up lives in [`Paper_WaterMLClustering.md`](Paper_WaterMLClustering.md)
-(PDF: [`Paper_WaterMLClustering.pdf`](Paper_WaterMLClustering.pdf)). The
-custom Structure-Factor Validation Score is documented in
+The custom Structure-Factor Validation Score is documented in
 [`3_clustering/SFVS_metric.md`](3_clustering/SFVS_metric.md), next to its
 implementation in `3_clustering/sfvs.py`.
 
@@ -24,8 +22,7 @@ implementation in `3_clustering/sfvs.py`.
 ```
 
 The numbered prefix is the running order: stage *N* consumes the output of
-stage *N − 1*. Each directory has its own `_legacy_README.md` carrying over
-notes from the original Cursor-era layout.
+stage *N − 1*. Each directory has its own `README.md` documenting the stage.
 
 ---
 
@@ -63,7 +60,7 @@ bash pipeline/run_sk_batch.sh     # S(k) only, post-process existing batches
 ```
 .
 ├── README.md                  ← this file
-├── Paper_WaterMLClustering.md / .pdf
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
 │
@@ -179,3 +176,9 @@ umap-learn  # optional — only used by --umap flag in 3_clustering
 ```
 
 `pip install -r requirements.txt` if you want to use the included list.
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE) — see the `LICENSE` file for full text.
