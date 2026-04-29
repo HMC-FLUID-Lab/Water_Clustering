@@ -79,15 +79,9 @@ bash pipeline/run_sk_batch.sh     # S(k) only, post-process existing batches
 │   └── run_sk_batch.sh        ← batch S(k) post-process
 │
 ├── data/                      ← inputs (gitignored — large binaries)
-│   ├── simulations/{tip4p2005, tip5p, swm4ndp}/
-│   └── order_params/
-│
-├── results/                   ← outputs (gitignored)
-│   ├── clustering/
-│   ├── structure_factor/
-│   └── paper_figures/
-│
-└── _archive/                  ← legacy code kept for reference (gitignored)
+    ├── simulations/{tip4p2005, tip5p, swm4ndp}/
+    └── order_params/
+
 ```
 
 **Code is committed; data and results are not.** See [.gitignore](.gitignore).
